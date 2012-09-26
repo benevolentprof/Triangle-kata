@@ -1,0 +1,27 @@
+This project is a partial solution to the Triangle kata described by 
+Llewellyn Falco (@LlewellynFalco) in 
+http://www.slideshare.net/llewellynfalco/test-drivendevelopment-fluency
+
+The test cases follows the 10 steps described on slide 4. 
+
+Although it's a good demo of test-driven development, it's still missing 
+a lot of test cases to make this a serious set of test cases. Currently, 
+there are 10 methods (each corresponding to one of the 10 steps) and all 
+of them use a 3-4-5 triangle with the right angle at the origin. 
+
+Test cases that I would add
+
+* Check that all three angles add to 180 degrees
+* Other kinds of triangles, e.g. equilateral, scalene, isosoles, degenerate
+* Triangles with negative vectors
+* Sides that have 0 length
+* Co-linear sides
+* Either add getters and setters to all classes OR make the fields final
+
+* Passing null pointers
+* Dealing with invalid input (with exceptions?)
+* Have getPoints and getSides throw exceptions on errors
+
+* Point.isEquals uses simple == operator. Should probably allow points within
+epsilon, because the x and y coordinates are doubles
+
